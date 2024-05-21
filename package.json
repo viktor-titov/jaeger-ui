@@ -1,5 +1,8 @@
 {
-  "name": "jaeger-ui",
+  "name": "@viktor-titov/jaeger-ui",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/viktor-titov"
+  },
   "private": true,
   "version": "0.0.0",
   "type": "module",
