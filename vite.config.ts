@@ -4,6 +4,11 @@ import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts';
 
 export default defineConfig({
+  define: {
+    __REACT_APP_GA_DEBUG__: JSON.stringify(process.env.REACT_APP_GA_DEBUG || ''),
+    __REACT_APP_VSN_STATE__: JSON.stringify(process.env.REACT_APP_VSN_STATE || ''),
+    __APP_ENVIRONMENT__: JSON.stringify(process.env.NODE_ENV || 'development'),
+  },
   plugins: [
     // поддержка синтаксиса React (JSX и прочее)
     react(),
